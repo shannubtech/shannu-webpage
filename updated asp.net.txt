@@ -1,0 +1,159 @@
+What is ASP.NET?
+ASP.NET is a web application framework developed and maintained by Microsoft to build dynamic web applications, web services, and websites.
+
+What are the different types of ASP.NET controls?
+ASP.NET provides two types of controls: server controls and HTML controls. Server controls are more powerful and provide more functionality, while HTML controls are simpler and provide basic functionality.
+
+What is the ASP.NET page life Cycle?
+The ASP.NET page life cycle consists of stages such as initialization, loading, postback event handling, view state management, rendering, and unloading. It determines the sequence of events from receiving a request to sending the response. Developers can customize behavior and handle events at different stages.
+ASP.NET page life cycle:
+
+1. Initialization: Set controls and properties to initial values.
+2. Load: Perform initialization tasks, retrieve data, and populate controls.
+3. Postback Event Handling: Process user actions and execute server-side code.
+4. View State Management: Load and update control states.
+5. Rendering: Transform the page into HTML markup.
+6. Unload: Clean up and finalize before unloading from memory.
+
+1.What are the different Session state management options available in ASP.NET?
+
+Answer: The session state is useful for maintaining user-specific information, such as shopping cart items, user preferences, or login status, throughout a user's session on a website. The following are the different session state management options available in ASP.NET:
+
+1. In-Process Session State: Stores data in memory on the web server.
+
+2. State Server Session State: Stores data in a separate ASP.NET State Service process for sharing across multiple servers.
+
+3. SQL Server Session State: Stores data in a SQL Server database for persistence and sharing among servers.
+
+4. Custom Session State: Allows implementing a custom provider to store session data in a custom storage mechanism.
+
+5. Cookieless Session State: Embeds session ID in the URL for session tracking without cookies.
+
+2.What is caching in ASP.NET?
+
+Caching is a way to temporarily store frequently accessed data or output in memory, improving performance by avoiding redundant computations or data retrievals. It includes output caching, data caching, fragment caching, and the ASP.NET Caching API. Caching reduces server load and enhances application scalability.
+
+3.What are Cookies in ASP.NET?
+
+Cookies are small text files that are stored on the client's machine. They are used to store and retrieve user-specific information or session data between multiple requests. Cookies are primarily used for maintaining state and personalization on website.
+
+Domain: Using these properties, we can set the domain of the cookie.
+Expires: This property sets the Expiration time of the cookies.
+HasKeys: If the cookies have a subkey, then it returns True.
+Name: Contains the name of the Key.
+Path: Contains the Virtual Path to be submitted with the Cookies.
+Secured: If the cookies are to be passed in a secure connection, then it only returns True.
+Value: Contains the value of the cookies.
+
+4.What is Ajax in ASP.NET?
+
+Ajax is a technique for asynchronous communication between the web browser and the server, allowing dynamic updates without page reloads. It enhances user experience by enabling data retrieval, form submission, and dynamic content loading without interrupting the user's interaction.
+
+5.What are Web Services in ASP.NET?
+
+Web Services in ASP.NET are a technology for building interoperable and distributed applications. They use open standards like XML and SOAP to enable communication and data exchange between different systems. Web services promote interoperability, standardization, and reusability across platforms and technologies. They are commonly used for system integration and building APIs.
+
+
+What is ViewState in ASP.NET?
+ViewState is a client-side state management technique used in ASP.NET to maintain the state of server-side objects between postbacks.
+
+What is the difference between ASP.NET Web Forms and ASP.NET MVC?
+ASP.NET Web Forms is a traditional approach to building web applications that uses server controls and view state to build pages, while ASP.NET MVC is a newer approach that uses a Model-View-Controller (MVC) pattern to separate concerns and build more scalable and testable applications.
+
+What is the purpose of the Global.asax file in an ASP.NET application?
+The Global.asax file is a special file in an ASP.NET application that contains application-level events and handlers, such as Application_Start, Application_End, Session_Start, and Session_End.
+
+What is routing in ASP.NET MVC?
+Routing is the process of mapping URLs to actions in an ASP.NET MVC application. It allows for cleaner, more SEO-friendly URLs and greater control over the routing of requests to the appropriate controller actions.
+
+What is an action filter in ASP.NET MVC?
+An action filter is a type of filter in ASP.NET MVC that allows developers to run code before or after an action method is executed, or to replace the action method altogether.
+
+What is bundling and minification in ASP.NET?
+Bundling and minification are techniques used in ASP.NET to improve the performance of web applications by combining multiple JavaScript and CSS files into a single file, and by reducing the size of those files through minification.
+
+What is an HTTP Handler in ASP.NET?
+An HTTP Handler is a component in ASP.NET that processes incoming HTTP requests and generates responses. Handlers can be used to serve static files, generate dynamic content, or perform other tasks based on the incoming request.
+
+What is Razor in ASP.NET?
+Razor is a view engine in ASP.NET that allows developers to write views using a combination of HTML and C# or VB.NET code. It is designed to be simple and easy to read, while still providing powerful features for building dynamic web pages.
+
+What is an Application Pool in IIS?
+An Application Pool is a grouping of one or more web applications in IIS that share the same configuration and run under the same process identity.
+
+What is a Session in ASP.NET?
+A Session in ASP.NET is a mechanism used to maintain state between page requests for a particular user. It is stored on the server and can be used to store user-specific data such as shopping cart items or user preferences.
+
+What is the difference between the App_Code and App_Data folders in an ASP.NET application?
+The App_Code folder is used to store code files that are compiled dynamically at runtime, while the App_Data folder is used to store data files such as XML or SQL Server databases.
+
+What is cross-site scripting (XSS) and how can it be prevented in ASP.NET?
+Cross-site scripting (XSS) is a type of web security vulnerability that allows attackers to inject malicious code into a web page viewed by other users. It can be prevented in ASP.NET by using encoding and validation techniques, and by sanitizing user input before it is displayed on a web page.
+
+What is Query String in ASP.net
+In ASP.NET, a query string is a part of the URL that contains data in the form of key-value pairs. It is used to pass information between pages or to customize the behavior of a web page. Query string values can be accessed using the Request.QueryString collection.
+
+Syntax of Query String
+
+Request.QueryString(variable)[(index).count]
+
+What is tracing in .NET?
+
+Tracing in .NET is a debugging and diagnostic technique that allows developers to monitor code execution, log information, and diagnose issues at runtime. It provides insights for debugging, performance analysis, and real-time monitoring.
+
+What are the ASP.NET page life cycle events?
+Key ASP.NET page life cycle events:
+
+1. PreInit: Dynamic control creation and theme setting.
+2. Init: Control initialization and property setting.
+3. LoadViewState: Loading the view state of controls.
+4. LoadPostData: Processing posted data for postback.
+5. Load: Data binding and setting control properties.
+6. PreRender: Final modifications before rendering.
+7. SaveViewState: Saving the view state of controls.
+8. Render: Rendering the HTML output.
+9. Unload: Cleanup and resource release.
+
+What is the PostBack property in ASP.NET?
+
+The PostBack property in ASP.NET is a Boolean property of server-side controls that indicates whether the control's event was triggered by a postback. It allows developers to differentiate between postback events and initial page loads, enabling conditional actions based on the event type.
+
+Explain GridView control in ASP.NET
+The GridView control in ASP.NET is used to display tabular data from a data source. It supports features like sorting, paging, editing, and formatting. It simplifies the presentation and manipulation of data in a grid-like format.
+
+What are the differences between ASP.NET httpsHandler and httpsModule?
+- HTTPS Handler: Processes requests specifically over the HTTPS protocol, registered based on file extensions or paths, used for custom request/response handling.
+- HTTPS Module: Intercepts requests regardless of the protocol, participates in the request/response pipeline, enables implementation of cross-cutting concerns such as authentication or caching.
+
+Describe login Controls in ASP.net
+
+Login controls in ASP.NET simplify user authentication and login functionality. Key controls include LoginView, Login, CreateUserWizard, PasswordRecovery, and ChangePassword. They provide pre-built features like credential management, validation, registration, password recovery, and password change.
+
+What are the authentication modes in ASP.NET for security?
+
+Windows Authentication: Uses Windows credentials for authentication, suitable for intranet applications.
+Forms Authentication: Custom authentication using a login form, suitable for intranet and internet applications.
+Passport Authentication (deprecated): Centralized authentication service, no longer recommended.
+Claims-based Authentication: Flexible authentication using claims, commonly used in modern ASP.NET applications.
+
+How can we apply themes in ASP.NET application?
+
+To apply themes in ASP.NET:
+
+1. Create a "Theme" folder in the application.
+2. Define a subfolder for the theme and add CSS, image, and skin files.
+3. Set the default theme in the Web.config file.
+4. Apply the theme by setting the "SkinID" property of controls.
+5. The runtime will automatically apply the theme to matching controls.
+
+
+What are the different validators in ASP.NET?
+
+Validators in ASP.NET:
+
+1. RequiredFieldValidator: Ensures a field is not empty.
+2. RangeValidator: Validates values within a specified range.
+3. RegularExpressionValidator: Validates input against a pattern.
+4. CompareValidator: Compares input with another value or control.
+5. CustomValidator: Allows custom validation logic.
+6. ValidationSummary: Displays error messages from validators.

@@ -1,0 +1,41 @@
+What is ASP.NET?
+ASP.NET is a web application framework developed and maintained by Microsoft to build dynamic web applications, web services, and websites.
+
+What are the different types of ASP.NET controls?
+ASP.NET provides two types of controls: server controls and HTML controls. Server controls are more powerful and provide more functionality, while HTML controls are simpler and provide basic functionality.
+
+What is ViewState in ASP.NET?
+ViewState is a client-side state management technique used in ASP.NET to maintain the state of server-side objects between postbacks.
+
+What is the difference between ASP.NET Web Forms and ASP.NET MVC?
+ASP.NET Web Forms is a traditional approach to building web applications that uses server controls and view state to build pages, while ASP.NET MVC is a newer approach that uses a Model-View-Controller (MVC) pattern to separate concerns and build more scalable and testable applications.
+
+What is the purpose of the Global.asax file in an ASP.NET application?
+The Global.asax file is a special file in an ASP.NET application that contains application-level events and handlers, such as Application_Start, Application_End, Session_Start, and Session_End.
+
+What is routing in ASP.NET MVC?
+Routing is the process of mapping URLs to actions in an ASP.NET MVC application. It allows for cleaner, more SEO-friendly URLs and greater control over the routing of requests to the appropriate controller actions.
+
+What is an action filter in ASP.NET MVC?
+An action filter is a type of filter in ASP.NET MVC that allows developers to run code before or after an action method is executed, or to replace the action method altogether.
+
+What is bundling and minification in ASP.NET?
+Bundling and minification are techniques used in ASP.NET to improve the performance of web applications by combining multiple JavaScript and CSS files into a single file, and by reducing the size of those files through minification.
+
+What is an HTTP Handler in ASP.NET?
+An HTTP Handler is a component in ASP.NET that processes incoming HTTP requests and generates responses. Handlers can be used to serve static files, generate dynamic content, or perform other tasks based on the incoming request.
+
+What is Razor in ASP.NET?
+Razor is a view engine in ASP.NET that allows developers to write views using a combination of HTML and C# or VB.NET code. It is designed to be simple and easy to read, while still providing powerful features for building dynamic web pages.
+
+What is an Application Pool in IIS?
+An Application Pool is a grouping of one or more web applications in IIS that share the same configuration and run under the same process identity.
+
+What is a Session in ASP.NET?
+A Session in ASP.NET is a mechanism used to maintain state between page requests for a particular user. It is stored on the server and can be used to store user-specific data such as shopping cart items or user preferences.
+
+What is the difference between the App_Code and App_Data folders in an ASP.NET application?
+The App_Code folder is used to store code files that are compiled dynamically at runtime, while the App_Data folder is used to store data files such as XML or SQL Server databases.
+
+What is cross-site scripting (XSS) and how can it be prevented in ASP.NET?
+Cross-site scripting (XSS) is a type of web security vulnerability that allows attackers to inject malicious code into a web page viewed by other users. It can be prevented in ASP.NET by using encoding and validation techniques, and by sanitizing user input before it is displayed on a web page.

@@ -1,0 +1,133 @@
+
+1. What is store process in sql?
+
+A stored procedure in SQL is a named set of SQL statements and logic stored in a database. It can be invoked later to execute a predefined operation or business logic. Stored procedures provide code reusability, optimize performance, support input parameters, participate in transactions, and enhance security.
+
+2. what is constant in sql?
+
+In SQL, a constant is a fixed value specified within a query or statement, representing a string, number, date, or Boolean value that remains unchanged during execution.
+
+3. what is check constraint in sql?
+
+In SQL, a check constraint is a rule that defines conditions for data values in a column or table, ensuring that only valid data is inserted or updated. It helps maintain data integrity and prevents data that doesn't meet the specified criteria from being stored in the database
+
+4. create a table by using existing table?
+
+To create a new table using an existing table as a reference, you can use the "CREATE TABLE" statement with the "AS" keyword in SQL. 
+
+Syntax :
+CREATE TABLE new_table_name AS
+SELECT column1, column2, ...
+FROM existing_table_name
+WHERE condition;
+
+example:
+CREATE TABLE customers_new AS
+SELECT customer_id, first_name, last_name, email
+FROM customers
+WHERE country = 'USA';
+
+In this example, a new table called "customers_new" is created, with columns "customer_id," "first_name," "last_name," and "email." It copies the data from the "customers" table but only selects customers from the USA.
+
+5. what is the STRUCTURE of the table?
+
+The structure of a table in SQL includes the column names, data types, and constraints associated with each column. It defines how the table is organized and the properties of its columns.
+
+Table: customers
++-------------+--------------+----------+
+| Column      | Data Type    | Constraints |
++-------------+--------------+----------+
+| customer_id | INT          | PRIMARY KEY, AUTO_INCREMENT |
+| first_name  | VARCHAR(50)  | NOT NULL |
+| last_name   | VARCHAR(50)  | NOT NULL |
+| email       | VARCHAR(100) | UNIQUE     |
+| birth_date  | DATE         |           |
++-------------+--------------+----------+
+
+6. what is the difference between DELETE DROP and TRUNCATE in sql? and its Functions ?
+
+DELETE is used to remove specific rows from a table, DROP is used to delete entire database objects, and TRUNCATE is used to remove all rows from a table while keeping the table structure intact.
+
+7. what are the ranking functions?
+Ranking functions in SQL are a group of built-in functions that assign a rank or position to rows within a result set based on specified criteria. These functions provide a way to analyze and order data based on specific ranking requirements. Here are some commonly used ranking functions:
+
+RANK: Assigns a unique rank to each row, with the same rank for rows with equal values. The next rank is skipped if there are ties. For example, if two rows have the same value and rank 1, the next rank will be 3.
+
+DENSE_RANK: Similar to RANK, but without skipping ranks for ties. If two rows have the same value and rank 1, the next rank will be 2. DENSE_RANK provides consecutive ranks without gaps.
+
+ROW_NUMBER: Assigns a unique number to each row in the result set, without considering any ties or gaps. It simply numbers the rows sequentially.
+
+These ranking functions can be used in conjunction with the ORDER BY clause to define the criteria for ranking. They are commonly used in analytical queries and reporting scenarios to identify top performers, generate leaderboards, or retrieve specific ranges of ranked data.
+
+7.can expalain about having class 
+
+Usage: The HAVING clause is typically used in conjunction with the GROUP BY clause. After grouping the data based on specific columns, the HAVING clause is used to filter the grouped results based on aggregate conditions.
+
+SELECT column1, column2, ...
+FROM table_name
+GROUP BY column1, column2, ...
+HAVING condition;
+
+8.can you explain about the intersect operator?
+The intersect operator, denoted as "∩" or "INTERSECT" in SQL, finds the common elements or rows between two sets or tables. It returns only the values or rows that are present in both sets or tables.
+
+
+9.difference between abstract class and interfaces?
+
+Abstract classes:
+
+Cannot be instantiated.
+Can have a mix of abstract and concrete methods.
+Allow single inheritance.
+Can have different access modifiers.
+Used for defining common behavior and providing a base for derived classes.
+
+Interfaces:
+
+Cannot be instantiated.
+Only contain method declarations.
+Allow multiple inheritance.
+Members are public by default.
+Used for defining contracts that classes must implement.
+
+10.enable attribute routing and condition attribute in mvc 
+
+o enable attribute routing in an MVC application, add the following line in the RouteConfig.cs file:
+
+csharp
+Copy code
+routes.MapMvcAttributeRoutes();
+To use conditional attributes, apply the [Route] attribute to controller actions, specifying the desired URL, parameters, and constraints:
+
+csharp
+Copy code
+[Route("home/myurl")]
+public ActionResult MyAction()
+{
+    // Your logic here
+    return View();
+}
+
+[Route("home/user/{id}")]
+public ActionResult UserDetails(int id)
+{
+    // Your logic here
+    return View();
+}
+
+[Route("home/product/{id:int}")]
+public ActionResult ProductDetails(int id)
+{
+    // Your logic here
+    return View();
+}
+By enabling attribute routing and using conditional attributes, you can define specific routes and constraints directly on your controller actions, providing more flexibility in your MVC application's routing configuration.
+
+11. what is partial views?
+
+Partial views are reusable components in web development that allow for the modularization and reusability of code. They break down complex user interfaces into smaller, independent parts that can be combined to form the complete interface. They promote code reuse and separation of concerns, making web development more efficient and maintainable.
+
+
+
+
+

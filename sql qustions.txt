@@ -1,0 +1,67 @@
+What is SQL?
+Answer: SQL stands for Structured Query Language, which is a programming language used to manage and manipulate data in relational databases.
+
+What is a relational database?
+Answer: A relational database is a type of database that organizes data into one or more tables with a unique key identifying each row. It allows for relationships to be established between different tables.
+
+What is a primary key?
+Answer: A primary key is a unique identifier for a record in a table. It ensures that each record can be uniquely identified and accessed in a database.
+
+What is a foreign key?
+Answer: A foreign key is a field in a table that refers to the primary key of another table. It establishes a relationship between the two tables and allows for the creation of complex queries.
+
+What is normalization?
+Answer: Normalization is the process of organizing data in a database by breaking up tables into smaller, more specialized tables. This reduces data redundancy and improves data integrity.
+
+What is denormalization?
+Answer: Denormalization is the process of adding redundant data to a database to improve performance by reducing the number of joins required in complex queries.
+
+What is an index in SQL?
+Answer: An index is a database object used to improve the speed of data retrieval. It is created on one or more columns of a table and stores a copy of the data in a separate location.
+
+What is a clustered index?
+Answer: A clustered index is an index that determines the physical order of data in a table. It is created on the primary key of a table and can improve the speed of queries that use the primary key.
+
+What is a non-clustered index?
+Answer: A non-clustered index is an index that does not affect the physical order of data in a table. It is created on one or more non-primary key columns and can improve the speed of queries that search for specific values.
+
+What is a stored procedure?
+Answer: A stored procedure is a precompiled block of SQL code that can be executed on a database server. It is used to perform complex operations and can improve the performance of database applications.
+
+What is a trigger?
+Answer: A trigger is a special type of stored procedure that is automatically executed in response to a specific database event, such as the insertion, update, or deletion of a record.
+
+What is a view?
+Answer: A view is a virtual table that is created by combining data from one or more tables in a database. It allows for the creation of complex queries and can improve database performance.
+
+What is a subquery?
+Answer: A subquery is a query that is embedded inside another query. It is used to retrieve data that will be used in the main query.
+
+What is a join?
+Answer: A join is used to combine data from two or more tables based on a related column. There are several types of joins, including inner joins, outer joins, and self-joins.
+
+What is a self-join?
+Answer: A self-join is a join in which a table is joined to itself based on a related column. It is used to retrieve data that is related within a single table.
+
+What is the difference between an inner join and an outer join?
+Answer: An inner join returns only the records that have a matching value in both tables being joined, while an outer join returns all records from one table and the matching records from the other table.
+
+What is the difference between a left join and a right join?
+Answer: A left join returns all records from the left table and the matching records from the right table, while a right join returns all
+
+what is crud operations in sql?
+CRUD operations in SQL refer to the basic operations that can be performed on a database. CRUD stands for Create, Read, Update, and Delete, and each of these operations is used to manipulate the data stored in a database.
+
+Create: This operation is used to insert new data into a database. It is often done using the SQL INSERT statement.
+
+Read: This operation is used to retrieve data from a database. It is often done using the SQL SELECT statement.
+
+Update: This operation is used to modify existing data in a database. It is often done using the SQL UPDATE statement.
+
+Delete: This operation is used to remove data from a database. It is often done using the SQL DELETE statement.
+
+Together, these four operations form the basis of most database applications and are essential to managing data in a database.
+
+what is difference between truncate and delete in sql?
+In SQL, DELETE statement removes specific rows from a table based on a condition whereas TRUNCATE statement removes all the rows from a table. TRUNCATE statement is faster and uses fewer system resources, but it cannot be rolled back while DELETE statement can be rolled back.
+

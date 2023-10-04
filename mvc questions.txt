@@ -1,0 +1,72 @@
+What is MVC in ASP.NET?
+MVC stands for Model-View-Controller. It is a design pattern used to develop web applications.
+
+What are the advantages of using MVC in ASP.NET?
+Separation of concerns, Testability, and Reusability.
+
+What is the difference between ASP.NET and ASP.NET MVC?
+ASP.NET is a web application framework, while ASP.NET MVC is a web application development pattern based on MVC.
+
+What is Routing in MVC?
+Routing is the process of mapping URLs to corresponding controller actions in an MVC application.
+
+What is a Controller in MVC?
+A Controller is responsible for processing incoming requests, handling user input, and returning a response.
+
+What is a View in MVC?
+A View is responsible for rendering the user interface of an application. It receives data from the Controller and renders it to the user.
+
+
+What is a Model in MVC?
+A Model is responsible for representing the data and business logic of an application. It communicates with the Controller and the View.
+
+What is TempData in MVC?
+TempData is a dictionary object that is used to store data temporarily between two consecutive requests.
+
+What is ViewBag in MVC?
+ViewBag is a dynamic object that is used to pass data from a Controller to a View.
+
+What is ViewData in MVC?
+ViewData is a dictionary object that is used to pass data from a Controller to a View.
+
+What is a Partial View in MVC?
+A Partial View is a reusable View that can be used in multiple places within an application.
+
+What is the purpose of HtmlHelper in MVC?
+HtmlHelper is used to generate HTML controls such as textboxes, buttons, and dropdowns in an MVC application.
+
+What is the difference between Html.Partial and Html.RenderPartial in MVC?
+Html.Partial returns a string, while Html.RenderPartial writes directly to the response.
+
+What is AJAX in MVC?
+AJAX stands for Asynchronous JavaScript and XML. It is used to update parts of a web page without requiring a full page refresh.
+
+What is the purpose of the Global.asax file in MVC?
+The Global.asax file is used to handle application-level events in an MVC application.
+
+What is the difference between TempData and Session in MVC?
+TempData is used to store data temporarily between two consecutive requests, while Session is used to store data across multiple requests.
+
+What is Action Filter in MVC?
+Action Filter is used to execute some code before or after an action method is executed in an MVC application.
+
+What is the purpose of the Web.config file in MVC?
+The Web.config file is used to store application-level settings such as connection strings, application settings, and security settings.
+
+What is the purpose of the BundleConfig file in MVC?
+The BundleConfig file is used to define the bundles of CSS and JavaScript files that are used in an MVC application.
+
+What is the purpose of the RouteConfig file in MVC?
+The RouteConfig file is used to define the routing rules for an MVC application.
+
+What is the purpose of the FilterConfig file in MVC?
+The FilterConfig file is used to register global filters in an MVC application.
+
+What is the purpose of the App_Start folder in MVC?
+The App_Start folder is used to store configuration files that are executed when an MVC application starts.
+
+What is Dependency Injection in MVC?
+Dependency Injection is a design pattern used to manage object dependencies in an MVC application.
+
+What is the difference between ViewBag and ViewData in MVC?
+ViewBag is a dynamic object, while ViewData is a dictionary object.
